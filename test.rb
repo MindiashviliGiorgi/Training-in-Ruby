@@ -145,9 +145,22 @@
 
 # NO21 While loops
 
-index = 1
+# index = 1
 
-while index <= 8
-  puts index
-  index += 1
+# while index <= 8
+#   puts index
+#   index += 1
+# end
+
+# NO 22 Building a Guessing Game
+
+secret_word = "back-end";
+guess = "";
+
+while guess != secret_word
+  puts "Enter guess: "
+  guess = gets.chomp()
+
 end
+
+puts "you won"
