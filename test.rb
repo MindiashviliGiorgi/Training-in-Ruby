@@ -180,4 +180,112 @@
 
 # NO 23 For Loops
 
+# friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
 
+# for friend in friends
+#   puts friend
+# end
+
+# friends.each do |friend|
+#   puts friend
+# end
+
+# for index in 0..5
+#   puts index
+# end
+
+# 6.times do |index|
+#   puts index
+# end
+
+# NO 24 Exponent method
+
+# def pow(base_num, pow_num)
+#   result = 1;
+#   pow_num.times do |index|
+#     result = result * base_num
+#   end
+
+#   return result
+# end
+
+# puts pow(2, 3)
+
+
+# NO 25 Comments
+
+# puts "Comments are fun";
+
+=begin
+comments
+is here
+=end
+
+# NO 26 Reading Files
+
+# File.open("employees.txt", "r") do |file|
+  # puts file.readline()
+  # puts file.readline()
+  # puts file.readline()
+  # puts file.readchar()
+  # puts file.readchar()
+
+  # puts file.readlines()[2]
+#   for line in file.readlines()
+#     puts line
+#   end
+# end
+
+# file = File.open("employees.txt", "r");
+
+# puts file.readlines()
+
+# file.close()
+
+
+# NO 27 Writing files
+
+# file = File.open("employees.txt", "w")
+#   file.write("\nOscar, Accounting")
+
+# File.open("employees.txt", "w") do |file|
+
+# end
+
+# File.open("index.html", "w") do |file|
+#   file.write("<h1>Hello, World!</h1>")
+# end
+
+# File.open("employees.txt", "r+") do |file|
+#   file.readline();
+#   file.write("Overridden")
+# end
+
+# NO 28 Handling Errors
+
+# lucky_nums = [4, 8, 15, 16, 23, 42]
+
+# begin 
+#   lucky_nums["dog"]
+#   # num = 10 / 0
+# rescue ZeroDivisionError => e
+#   puts e
+# rescue TypeError => e
+#   puts e
+# end
+
+# NO 29 Classes & Objects
+
+class Book
+  attr_accessor :title, :author, :pages
+end
+
+book1 = Book.new()
+book1.title = "GM is Full-Stack";
+book1.author = "GM";
+book1.pages = 300;
+
+book2 = Book.new();
+book2.title = "Lord of the rings";
+book2.author = "Tolkein";
+book2.pages = 500;
