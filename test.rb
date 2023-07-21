@@ -276,16 +276,75 @@ is here
 
 # NO 29 Classes & Objects
 
-class Book
-  attr_accessor :title, :author, :pages
+# class Book
+#   attr_accessor :title, :author, :pages
+#   def initialize(title, author, pages)
+#     @title = title
+#     @author = author
+#     @pages = pages
+#   end
+# end
+
+# book1 = Book.new("GM Road", "GM", 300)
+# book2 = Book.new("Full-Stack Road", "GM", 400);
+
+# puts(book1.title)
+
+
+# NO 30 Object Methods
+
+# class Student
+#   attr_accessor :name, :major, :gpa
+#   def initialize(name, major, gpa)
+#     @name = name
+#     @major = major
+#     @gpa = gpa
+#   end
+
+#   def has_honor
+#     if @gpa >= 3.5
+#       return true
+#     end
+#     return false
+#   end
+# end
+
+# stundet1 = Student.new("Giorgi Mindiashvili", "Full-Stack", 4.0)
+
+# puts stundet1.name
+# puts stundet1.has_honor
+
+# NO 32 Builiding a Quiz
+
+class Question
+  attr_accessor :prompt, :answer
+  def initialize(prompt, answer)
+    @prompt = prompt
+    @answer = answer
+  end
 end
 
-book1 = Book.new()
-book1.title = "GM is Full-Stack";
-book1.author = "GM";
-book1.pages = 300;
+p1 = "What color are apples?\n(a)red\n(b)purple\n(c)orange"
+p2 = "What color are bananas?\n(a)pink\n(b)red\n(c)yellow"
+p3 = "What color are pears?\n(a)yellow\n(b)green\n(c)orange"
 
-book2 = Book.new();
-book2.title = "Lord of the rings";
-book2.author = "Tolkein";
-book2.pages = 500;
+questions = [
+  Question.new(p1, "a"),
+  Question.new(p2, "c"),
+  Question.new(p3, "b")
+]
+
+def run_test(questions)
+  answer = "";
+  score = 0;
+  for question in questions
+    puts question.prompt
+    answer = gets.chomp()
+    if answer == question.answer
+      score += 1
+    end
+  end
+  puts ("You got " + score.to_s + "/" + questions.length().to_s)
+end
+
+run_test(questions)
