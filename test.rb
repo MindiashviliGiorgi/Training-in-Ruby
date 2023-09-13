@@ -414,7 +414,101 @@ is here
 
 # MATH & NUMBERS
 
-num = 20;
+num = 20.1;
+
+# puts ("My fav num is " + num.to_s)
+# puts num.abs()
+# puts num.round()
+# puts num.ceil()
+# puts num.floor()
+# puts Math.sqrt(4)
+# puts 1.0 + 7
+# puts 10 / 5
+
+#Getting User Input
+
+# puts "Enter Your Name: "
+# name = gets.chomp()
+# puts "Enter your Age: "
+# age = gets.chomp()
+# puts ("Hello " + name + ", you are " + age + " years old!")
+
+# Building a Calculator
+
+# puts "Enter a number: "
+# num1 = gets.chomp().to_f;
+# puts "Enter another number: "
+# num2 = gets.chomp().to_f;
+
+# puts num1 + num2;
+
+#Building a Mad Libs Game
+
+# puts "Enter a color: "
+# color = gets.chomp();
+# puts "Enter a plural noun: "
+# plural_noun = gets.chomp();
+# puts "Enter a celebrity: "
+# celebrity = gets.chomp();
 
 
-puts ("My fav num is " + num.to_s)
+# puts ("Roses are " + color);
+# puts (plural_noun + " are blue");
+# puts ("I love " + celebrity);
+
+# Arrays
+
+# friends = ["Kevin", "Karen", "Oscar", "Andy"]
+# friends[0] = "Givi"
+# puts friends
+
+# friends = Array.new;
+# friends[0] = "Givi";
+# friends[3] = "Zura"
+
+# puts friends.length()
+# puts friends.include? "Karen";
+# puts friends.reverse();
+# puts friends.sort();
+
+# Hashes
+
+# states = {
+#   "Pennsylvania" => "PA",
+#   :NewYork => "NY",
+#   3 => "OR",
+# }
+
+# puts states[3]
+
+# Methods
+
+# def sayhi(name="No name", age="99")
+#   puts ("Hello " + name + ", you are " + age.to_s)
+# end
+
+# sayhi("Giorgi", 23)
+
+# Return Statements
+
+# def cube(num)
+#   return num * num * num, 23
+# end
+
+# puts cube(2)[1]
+
+# If Statements
+
+# ismale = true;
+# istall = false;
+
+# if ismale and istall
+#   puts "You are a tall male"
+# elsif ismale and !istall
+#   puts "You are not tall man"
+# else
+#   puts "You are not male or tall" 
+# end
+
+
+# If Statements (con't)
