@@ -414,7 +414,7 @@ is here
 
 # MATH & NUMBERS
 
-num = 20.1;
+# num = 20.1;
 
 # puts ("My fav num is " + num.to_s)
 # puts num.abs()
@@ -512,3 +512,135 @@ num = 20.1;
 
 
 # If Statements (con't)
+
+# def max(num1, num2, num3)
+#   if num1 >= num2 and num1 >= num3
+#     return num1
+#   elsif num2 >= num1 and num2 >= num3
+#     return num2
+#   else
+#     return num3 
+#   end
+# end
+
+# puts max(4, 5, 3)
+
+# Building a Better Calculator
+
+# def calculator()
+#   puts "Enter your first number: "
+#   num1 = gets.chomp().to_i
+#   puts "Enter your second number: "
+#   num2 = gets.chomp().to_i
+#   puts "Enter your operation: "
+#   op = gets.chomp();
+#   if op == "+"
+#     return num1 + num2
+#   elsif op == "-"
+#     return num1 - num2
+#   elsif op == "*"
+#     return num1 * num2
+#   else op == "/"
+#     return num1 / num2
+#   end
+# end
+
+# puts calculator()
+
+
+# Case Expressions
+
+# def get_day_name(day)
+#   day_name = "";
+#   case day
+#   when "mon"
+#     day_name = "Monday"
+#   when "tue"
+#     day_name = "Tuesday"
+#   when "wed"
+#     day_name = "Wednsday"
+#   when "thu"
+#     day_name = "Thursday"
+#   when "fri"
+#     day_name = "Friday"
+#   when "sat"
+#     day_name = "Saturday"
+#   when "sun"
+#     day_name = "Sunday"
+#   else
+#     day_name = "Invalid"
+#   end
+#   return day_name
+# end
+
+# puts get_day_name("un")
+
+# While loops
+
+# index = 1;
+
+# while index <= 5
+#   puts index
+#   index += 1
+# end
+
+
+# Building a guessing game
+
+# secret_word = "main"
+# guess = "";
+# guess_count = 0;
+# guess_limit = 3;
+# out_of_guesses = false;
+
+# while guess != secret_word and !out_of_guesses
+#   if guess_count < guess_limit
+#     puts "Enter guess: "
+#     guess = gets.chomp()
+#     guess_count += 1;
+#   else 
+#     out_of_guesses = true;
+#   end
+# end
+
+# if out_of_guesses
+#   puts "Lose"
+# else 
+#   puts "Win"
+# end
+
+
+# For Loops
+
+# friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
+
+# for friend in friends
+#   puts friend
+# end
+
+# friends.each do |friend|
+#   puts friend
+# end
+
+# for index in 0..5
+#   puts index
+# end
+
+# 10.times do |job|
+#   puts job
+# end
+
+# Exponent method
+
+# def pow(base_num, pow_num)
+#   result = 1;
+#   pow_num.times do |index|
+#     result = result * base_num
+#   end
+#   return result
+# end
+
+# puts pow(3, 3)
+
+# Comments
+
