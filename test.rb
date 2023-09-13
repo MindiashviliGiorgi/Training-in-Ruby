@@ -388,3 +388,33 @@ is here
 
 # NO 35 Interactive Ruby (irb)
 
+# character_name = "Giorgi"
+
+# puts ("girrafe" + character_name)
+# print "Hello world"
+# print " is cool"
+
+
+# phares = "Giviko"
+# puts phares.include? "Gi"
+
+# STRING
+
+# str = "Giviko";
+
+# puts str.upcase();
+# puts str.downcase();
+# puts str.strip();
+# puts str.length();
+# puts str.include? "Givi";
+# puts str[3];
+# puts str[0,9];
+# puts str.index("i");
+# puts "Giorgi".upcase();
+
+# MATH & NUMBERS
+
+num = 20;
+
+
+puts ("My fav num is " + num.to_s)
