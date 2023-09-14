@@ -643,4 +643,101 @@ is here
 # puts pow(3, 3)
 
 # Comments
+=begin
+puts "Comments are fun"
+=end
 
+# Reading files
+
+# File.open("employees.txt", "r") do |file|
+#   # puts file.read()
+#   # puts file.readline();
+#   # puts file.readline();
+#   # puts file.readchar();
+#   # puts file.readchar();
+#   # puts file.readchar();
+#   # puts file.readlines();
+#   # puts file.readlines()[3];
+#   for lines in file.readlines()
+#     puts lines
+#   end
+# end
+
+# file = File.open("employees.txt", "r")
+
+# puts file.read()
+
+# file.close();
+
+
+#Writing Files
+
+# File.open("employees.txt", "a") do |file|
+
+#   file.write("\nOscar, Accounting")
+
+# end
+
+# File.open("employees.txt", "w") do |file|
+
+#   file.write("\nOscar, Accounting")
+
+# end
+
+
+# File.open("index.html", "w") do |file|
+
+#   file.write("<h1>Hello</h1>")
+
+# end
+
+# File.open("employees.txt", "r+") do |file|
+
+#   file.readchar();
+#   file.write("Giviko")
+
+# end
+
+# Handling Errors
+
+# lucky_nums = [4, 8, 15, 16, 23, 42]
+
+# begin
+#   # lucky_nums["dog"]
+#   num = 10 / 0
+# rescue ZeroDivisionError => e
+#   # puts "Division by zero error"
+#   puts e
+# rescue TypeError => e
+#   puts e
+# end
+
+# Classes & Objects
+
+# class Book
+#   attr_accessor :title, :author, :pages
+
+#   def initialize(title, author, pages)
+#     @title = title
+#     @author = author
+#     @pages = pages
+#   end
+
+#   def to_s
+#     "Title: #{@title}, Author: #{@author}, Pages: #{@pages}"
+#   end
+
+#   def has_more_pages
+#     if @pages >= 350
+#       return true
+#     end
+#     return false
+#   end
+
+# end
+
+# book1 = Book.new("harry", "JK", 400)
+# book2 = Book.new("Haya", "hh", 300)
+# puts book2.has_more_pages
+
+# Building a Quiz
