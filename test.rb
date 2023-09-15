@@ -741,3 +741,75 @@ puts "Comments are fun"
 # puts book2.has_more_pages
 
 # Building a Quiz
+
+# class Question 
+#   attr_accessor :prompt, :answer
+#   def initialize(prompt, answer)
+#     @prompt = prompt
+#     @answer = answer
+#   end
+# end
+
+# p1 = "What color are apples ?\n(a)red\n(b)purple\n(c)pink";
+# p2 = "What color are bananas ?\n(a)pink\n(b)yellow\n(c)red";
+# p3 = "What color are pears ?\n(a)yellow\n(b)purple\n(c)pink";
+
+
+# questions = [
+#   Question.new(p1, "a"),
+#   Question.new(p2, "b"),
+#   Question.new(p3, "b")
+# ]
+
+# def run_test(questions)
+#   answer = "";
+#   score = 0;
+#   for question in questions
+#     puts question.prompt
+#     answer = gets.chomp();
+#     if answer == question.answer
+#       score += 1;
+#     end
+#   end
+#   puts ("You got " + score.to_s + "/" + questions.length().to_s)
+# end
+
+# run_test(questions)
+
+
+# class Question 
+#   attr_accessor :prompt, :answer
+#   def initialize(prompt, answer)
+#     @prompt = prompt
+#     @answer = answer
+#   end
+# end
+
+# p1 = "Rogor xar ?\n(a)Kargad\n(b)cudad\n(c)normalurad"
+# p2 = "Sait xar ?\n(a)Gori\n(b)Tbilisi\n(c)Kutaisi"
+# p3 = "Ra xdeba ?\n(a)Araperi\n(b)Titkmis araperi\n(c)Simshvide"
+
+# questions = [
+#   Question.new(p1, "a"),
+#   Question.new(p2, "a"),
+#   Question.new(p3, "c")
+# ]
+
+# def test_game(questions)
+#   answer = "";
+#   score = 0;
+#   for question in questions
+#     puts question.prompt
+#     answer = gets.chomp()
+#     if answer == question.answer
+#       score += 1;
+#     end
+#   end
+#   puts ("You got " + score.to_s + "/" + questions.length().to_s)
+# end
+
+# test_game(questions)
+
+
+# Inheritance
+
